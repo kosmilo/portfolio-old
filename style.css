@@ -1,0 +1,105 @@
+:root {
+    --background-color: rgb(26, 26, 26);
+    --navbar-color:  rgba(3, 3, 3, 0.5);
+    --navbar-hover-color: rgba(0, 0, 0, 0.3);
+    --text-color: rgb(236, 231, 231);
+    --link-in-text-color:  rgb(226, 15, 103);
+    --footer-color: rgb(46, 46, 46);
+    --nav-height: 80px;
+    --footer-height: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-size: 0;
+    font-family: 'Oswald', Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+p a {
+    color: var(--link-in-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+li, a, p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+h3, h4, h5, h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: var(--nav-height) auto 0;
+    padding: 40px;
+    min-height: calc(100vh - var(--nav-height));
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--navbar-color);
+    height: var(--nav-height);
+    width: 100%;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    height: 100%;
+}
+
+.main-nav li {
+    float: right;
+    height: 100%;
+}
+
+.to-main-page {
+    display: block;
+    height: 100%;
+    padding: 14px;
+    text-decoration: none;
+    float: left;
+}
+
+.main-nav li a {
+    display: block;
+    height: 100%;
+    padding: 26px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-nav li a:hover {
+    background-color: var(--navbar-hover-color);
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        padding: 15px;
+    }
+    .main-nav li a {
+        padding: 30px 10px;
+    }
+}

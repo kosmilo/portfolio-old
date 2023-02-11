@@ -1,0 +1,66 @@
+.img-and-contact {
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+}
+
+.img-and-contact img {
+    width: 100%;
+    padding-bottom: 20px;
+    object-fit: cover;
+}
+
+.about-me-text {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 320px);
+    padding-left: 40px;
+}
+
+.about-me-text p {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.expertise {
+    width: 33%;
+    float: left;
+    min-height: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .expertise {
+        width: 50%;
+        float: left;
+        min-height: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .img-and-contact {
+        width: 260px;
+    }
+
+    .about-me-text {
+        width: calc(100% - 260px);
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .img-and-contact {
+        width: 180px;
+    }
+
+    .about-me-text {
+        width: calc(100% - 180px);
+        padding-left: 20px;
+    }
+}
