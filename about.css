@@ -44,11 +44,11 @@ h2 {
     }
 
     .img-and-contact {
-        width: 260px;
+        width: 210px;
     }
 
     .about-me-text {
-        width: calc(100% - 260px);
+        width: calc(100% - 210px);
         padding-left: 20px;
     }
 
@@ -56,11 +56,11 @@ h2 {
 
 @media screen and (max-width: 600px) {
     .img-and-contact {
-        width: 180px;
+        width: 160px;
     }
 
     .about-me-text {
-        width: calc(100% - 180px);
+        width: calc(100% - 160px);
         padding-left: 20px;
     }
 }
