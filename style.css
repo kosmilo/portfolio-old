@@ -2,8 +2,9 @@
 
 :root {
     --background-color: rgb(26, 26, 26);
-    --navbar-color:  rgba(5, 5, 5, 0.6);
-    --navbar-hover-color: rgba(0, 0, 0, 0.3);
+    --navbar-color:  rgba(10, 10, 10, 0.8);
+    --mobile-navbar-color:  rgba(15, 15, 15, 0.9);
+    --navbar-hover-color: rgba(6, 6, 6, 0.8);
     --text-color: rgb(236, 231, 231);
     --link-in-text-color:  rgb(226, 15, 103);
     --nav-height: 80px;
@@ -111,6 +112,9 @@ main {
 }
 
 @media screen and (max-width: 700px) {
+    .main-nav {
+        background-color: var(--mobile-navbar-color);
+    }
     .main-nav ul {
         width: 100%;
     }
@@ -118,7 +122,7 @@ main {
     .main-nav li {
         display: none;
         width: 100%;
-        background-color: var(--navbar-color);
+        background-color: var(--mobile-navbar-color);
     }
 
     .main-nav label {
